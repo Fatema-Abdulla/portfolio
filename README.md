@@ -17,8 +17,11 @@ Personal portfolio website showcasing my projects, skills, and experience.
 ***
 
 ### ***WireFrame***
+#### Home Page
 ![image](./public/portfolio%20-%20home.png)
+#### Projects Page
 ![image](./public/portfolio%20-%20projects.png)
+#### Project Details Page
 ![image](./public/portfolio%20-%20project%20details.png)
 ***
 
