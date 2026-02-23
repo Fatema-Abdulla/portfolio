@@ -5,7 +5,7 @@ body {
 
 .navbar {
   background-color: #10202d;
-  padding: 2px 30px;
+  padding: 0px 30px;
 }
 
 .nav-container {
@@ -46,7 +46,10 @@ body {
   transition: all 0.3s ease;
 }
 
-.nav-link:hover,
+.nav-link:hover{
+  color:#c7a667;
+}
+
 .nav-link.active {
   background-color: #c7a667;
   color: #10202d;
@@ -54,6 +57,42 @@ body {
 
 .nav-link.active {
   font-weight: 700;
+}
+
+.header-container{
+  background-color: #10202d;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+}
+
+.header-text{
+  color: #f7f7f7;
+  padding: 0 95px;
+}
+
+.header-image{
+  padding: 0 60px;
+}
+
+.header-image img{
+  width: 420px;
+  filter: drop-shadow(0 20px 30px rgba(202, 202, 202, 0.3));
+}
+
+.my-name{
+  color: #c7a667;
+  font-size: 35px;
+  font-weight: 800px;
+  margin-top: -15px;
+}
+
+.header-sentence{
+  line-height: 25px;
+  font-weight: 500;
+  word-spacing: 5px;
+  margin-bottom: 19px;
 }
 
 /* Responsive */
