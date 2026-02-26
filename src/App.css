@@ -48,11 +48,11 @@ body{
   font-weight: 500;
   padding: 8px 18px;
   border-radius: 50px;
-  transition: all 0.3s ease;
+  transition: all 0.6s ease;
 }
 
 .nav-link:hover{
-  color:#c7a667;
+  color:#c4a46a;
 }
 
 .nav-link.active {
@@ -74,11 +74,13 @@ body{
 }
 
 .header-image{
+  margin-top: -5px;
   padding: 0 60px;
+  margin-bottom: 13px;
 }
 
 .header-image img{
-  width: 420px;
+  height: 280px;
   filter: drop-shadow(0 20px 30px rgba(202, 202, 202, 0.3));
 }
 
@@ -87,19 +89,36 @@ body{
   font-size: 35px;
   font-weight: 800;
   margin-top: 30px;
-
 }
 
 .header-sentence{
   line-height: 25px;
   font-weight: 500;
   word-spacing: 5px;
-  margin-bottom: 19px;
-  margin-top: 19px;
+  margin-top: 23px;
 }
 
 .about-skill{
   background-color: #f7f7f7;
+}
+
+.about-me{
+  padding: 0 95px;
+}
+
+.about-skill-title{
+  color: #c7a667;
+  font-size: 35px;
+  font-weight: 800;
+  margin: 15px 0;
+}
+
+.about-paragraph{
+  line-height: 25px;
+  font-weight: 500;
+  word-spacing: 1px;
+  margin: 11px 0;
+  text-align: justify;
 }
 
 /* Responsive */

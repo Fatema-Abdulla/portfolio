@@ -11,7 +11,13 @@ const ColorButton = styled(Button)(() => ({
   color: "#000",
   fontWeight: 800,
   letterSpacing: "1px",
-  marginTop: "4px"
+  marginTop: "14px",
+
+  "&:hover": {
+    backgroundColor: "#c4a46a",
+    color: "#000"
+  }
+
 }))
 
 const Header = () => {

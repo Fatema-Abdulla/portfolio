@@ -17,7 +17,7 @@ const ColorButton = styled(Button)(() => ({
 const Skills = () => {
   return (
     <div>
-      <h2 className="my-name">Hi, I'm Fatema Abdulla</h2>
+      <h2 className="about-skill-title">Skills</h2>
       <h3 className="header-sentence">
         Full Stack & WordPress Developer
         <br />
