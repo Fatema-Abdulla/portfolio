@@ -11,16 +11,25 @@ const ColorButton = styled(Button)(() => ({
   color: "#000",
   fontWeight: 800,
   letterSpacing: "1px",
-  marginTop: "4px"
+  marginTop: "4px",
 }))
 
 const AboutMe = () => {
   return (
     <div className="about-me">
       <h2 className="about-skill-title">About Me</h2>
-      <h4 className="about-paragraph">I’m an Information Systems graduate passionate about developing modern web applications that combine functionality, performance, and user-centered design. With a background in UX and hands-on experience in web technologies, I build responsive and intuitive digital solutions that prioritize both usability and clean architecture.
-
-      I am driven, detail-oriented, and continuously learning, seeking an opportunity to contribute to a dynamic development team where I can grow as a Software Engineer and create impactful products.</h4>
+      <h4 className="about-paragraph">
+        I am a Software Engineer and Information Systems graduate passionate
+        about building modern, user-friendly web applications. With a background
+        in UX design, I focus on creating intuitive and responsive digital
+        experiences.<br/>After completing an intensive full-stack development
+        bootcamp, I gained hands-on experience developing dynamic web
+        applications and working across both frontend and backend technologies.
+        I also completed a university internship in WordPress e-commerce
+        development, strengthening my skills in responsive design and
+        client-focused solutions.<br/>I am eager to grow within a professional
+        development team and contribute to impactful digital projects.
+      </h4>
     </div>
   )
 }
