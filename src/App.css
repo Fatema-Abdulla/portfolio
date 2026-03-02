@@ -117,27 +117,8 @@ body{
 .about-paragraph{
   line-height: 28px;
   font-weight: 500;
-  word-spacing: 1px;
   text-align: justify;
-}
-
-.programs{
-  width: 430px;
-  margin-top: 10px;
-}
-
-.skill-points{
-  margin-top: 18px;
-}
-
-.database{
-  width: 140px;
-  margin-top: 7px;
-}
-
-.frame_library{
-  width: 280px;
-  margin-top: 7px;
+  font-size: 1.09rem;
 }
 
 /* Responsive */
