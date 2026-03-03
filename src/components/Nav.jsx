@@ -1,15 +1,13 @@
 import "../App.css"
 import { NavLink } from "react-router-dom"
 
-import logo from "../assets/newlogo.png"
-
 const Nav = () => {
   return (
     <nav className="navbar">
       <div className="nav-container">
 
         <div className="nav-left">
-          <img src={logo} alt="logo" className="nav-logo" />
+          <img src="/public/newlogo.png" alt="logo" className="nav-logo" />
           <h4 className="nav-name">Fatema Abdulla</h4>
         </div>
 

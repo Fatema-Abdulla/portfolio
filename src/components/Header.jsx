@@ -1,5 +1,4 @@
 import "../App.css"
-import image from "../assets/banner_img.png"
 
 import Button from "@mui/material/Button"
 import Box from "@mui/material/Box"
@@ -38,7 +37,7 @@ const Header = () => {
             </Grid>
             <Grid item xs={4}>
               <div className="header-image">
-                <img src={image} alt="header image" />
+                <img src="/public/images/banner_img.png" alt="header image" />
               </div>
             </Grid>
           </Grid>

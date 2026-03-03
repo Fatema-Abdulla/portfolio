@@ -1,0 +1,72 @@
+{
+  "allSkills": {
+    "programs": [
+      {
+        "name": "HTML",
+        "icon": "html.png"
+      },
+      {
+        "name": "CSS",
+        "icon": "css.png"
+      },
+      {
+        "name": "JavaScript",
+        "icon": "java-script.png"
+      },
+      {
+        "name": "PHP(PDO)",
+        "icon": "php.png"
+      },
+      {
+        "name": "SQL",
+        "icon": "sql-server.png"
+      },
+      {
+        "name": "Python",
+        "icon": "python.png"
+      }
+    ],
+    "databases": [
+      {
+        "name": "MongoDB",
+        "icon": "MongoDB.png"
+      },
+      {
+        "name": "PostgreSQL",
+        "icon": "PostgreSQL.png"
+      }
+    ],
+    "frameworksLibraries": [
+      {
+        "name": "NodeJS",
+        "icon": "Node JS.webp"
+      },
+      {
+        "name": "ExpressJS",
+        "icon": "ExpressJS.png"
+      },
+      {
+        "name": "React",
+        "icon": "React.png"
+      },
+      {
+        "name": "Django",
+        "icon": "Django.webp"
+      }
+    ]
+  },
+  "sections": [
+    {
+      "key": "programs",
+      "title": "Programming Languages"
+    },
+    {
+      "key": "databases",
+      "title": "Databases"
+    },
+    {
+      "key": "frameworksLibraries",
+      "title": "Frameworks and Libraries"
+    }
+  ]
+}
