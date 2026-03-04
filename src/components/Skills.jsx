@@ -53,7 +53,7 @@ const Skills = () => {
                 {skillsData.allSkills[sec.key].map((skill) => (
                   <CustomizeBox key={skill.name}>
                     <img
-                      src={`/public/images/${skill.icon}`}
+                      src={`/images/${skill.icon}`}
                       width="40"
                       alt={skill.name}
                     />

@@ -2,6 +2,7 @@ import "../App.css"
 import Header from "./Header"
 import AboutMe from "./AboutMe"
 import Skills from "./Skills"
+import Contact from "./Contact"
 
 import Box from "@mui/material/Box"
 import Grid from "@mui/material/GridLegacy"
@@ -20,6 +21,7 @@ const Home = () => {
           </Grid>
         </Grid>
       </Box>
+      <Contact />
     </div>
   )
 }

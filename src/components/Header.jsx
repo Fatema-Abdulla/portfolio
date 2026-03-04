@@ -37,7 +37,7 @@ const Header = () => {
             </Grid>
             <Grid item xs={4}>
               <div className="header-image">
-                <img src="/public/images/banner_img.png" alt="header image" />
+                <img src="/images/banner_img.png" alt="header image" />
               </div>
             </Grid>
           </Grid>

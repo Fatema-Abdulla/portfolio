@@ -100,7 +100,7 @@ body{
 
 .about-skill{
   background-color: #f7f7f7;
-  margin-bottom: 20px;
+  margin: 20px 0;
 }
 
 .about-me{
@@ -119,6 +119,19 @@ body{
   font-weight: 500;
   text-align: justify;
   font-size: 1.09rem;
+}
+
+.contact-me{
+  padding: 0 95px;
+  margin-bottom: 20px;
+}
+
+.contact-title{
+  color: #c7a667;
+  font-size: 35px;
+  font-weight: 800;
+  margin: 75px 0 5px 0;
+  text-align: center;
 }
 
 /* Responsive */

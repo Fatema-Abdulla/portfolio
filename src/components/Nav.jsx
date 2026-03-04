@@ -7,7 +7,7 @@ const Nav = () => {
       <div className="nav-container">
 
         <div className="nav-left">
-          <img src="/public/newlogo.png" alt="logo" className="nav-logo" />
+          <img src="/newlogo.png" alt="logo" className="nav-logo" />
           <h4 className="nav-name">Fatema Abdulla</h4>
         </div>
 
