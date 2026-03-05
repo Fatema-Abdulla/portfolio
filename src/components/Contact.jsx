@@ -2,11 +2,13 @@ import { useState } from "react"
 import { TextField, Button, Box, Typography, Alert } from "@mui/material"
 
 const Contact = () => {
-  const [formData, setFormData] = useState({
-    name: "",
-    subject: "",
-    message: "",
-  })
+  const initialFormState = {
+  name: "",
+  email: "",
+  description: "",
+};
+
+  const [formData, setFormData] = useState(initialFormState);
 
   const [success, setSuccess] = useState(false)
 
@@ -17,6 +19,10 @@ const Contact = () => {
     })
   }
 
+  const handleReset = () => {
+    setFormData(initialFormState)
+  }
+
   const handleSubmit = async (e) => {
     e.preventDefault()
 
@@ -25,8 +31,8 @@ const Contact = () => {
 
     const formBody = new FormData()
     formBody.append("entry.2051031244", formData.name)
-    formBody.append("entry.275432559", formData.subject)
-    formBody.append("entry.2007378710", formData.message)
+    formBody.append("entry.275432559", formData.email)
+    formBody.append("entry.2007378710", formData.description)
 
     try {
       await fetch(formURL, {
@@ -39,8 +45,8 @@ const Contact = () => {
 
       setFormData({
         name: "",
-        subject: "",
-        message: "",
+        email: "",
+        description: "",
       })
     } catch (error) {
       console.error("Error submitting form", error)
@@ -50,53 +56,74 @@ const Contact = () => {
   return (
     <div className="contact-me">
       <h2 className="contact-title">Contact Me</h2>
-      <Box sx={{ maxWidth: 600, mx: "auto"}}>
-      {success && (
-        <Alert severity="success" sx={{ mb: 2 }}>
-          Message sent successfully!
-        </Alert>
-      )}
+      <p className="contact-des">
+        Please get in contact with me if you have any questions.
+      </p>
+      <Box sx={{ maxWidth: 600, mx: "auto" }}>
+        {success && (
+          <Alert severity="success" sx={{ mb: 2 }}>
+            description sent successfully!
+          </Alert>
+        )}
 
-      <Box component="form" onSubmit={handleSubmit}>
-        <TextField
-          fullWidth
-          label="Name"
-          name="name"
-          value={formData.name}
-          onChange={handleChange}
-          margin="normal"
-          required
-        />
+        <Box component="form" onSubmit={handleSubmit}>
+          <TextField
+            fullWidth
+            label="Name"
+            name="name"
+            value={formData.name}
+            onChange={handleChange}
+            margin="normal"
+            required
+          />
 
-        <TextField
-          fullWidth
-          label="Subject"
-          name="subject"
-          value={formData.subject}
-          onChange={handleChange}
-          margin="normal"
-          required
-        />
+          <TextField
+            fullWidth
+            label="Email"
+            name="email"
+            type="email"
+            value={formData.email}
+            onChange={handleChange}
+            margin="normal"
+            required
+          />
 
-        <TextField
-          fullWidth
-          label="Message"
-          name="message"
-          value={formData.message}
-          onChange={handleChange}
-          margin="normal"
-          multiline
-          rows={4}
-          required
-        />
+          <TextField
+            fullWidth
+            label="Description"
+            name="description"
+            value={formData.description}
+            onChange={handleChange}
+            margin="normal"
+            multiline
+            rows={4}
+            required
+          />
 
-        <Button type="submit" variant="contained" sx={{ mt: 2, backgroundColor: "#10202d" }}>
-          Send Message
-        </Button>
+          <Button
+            type="submit"
+            variant="contained"
+            sx={{ mt: 2, backgroundColor: "#10202d" }}
+          >
+            Send Message
+          </Button>
+          <Button
+            type="reset"
+            variant="outlined"
+            onClick={handleReset}
+            sx={{
+              mt: 2,
+              ml: 1.5,
+              backgroundColor: "transparency",
+              color: "#10202d",
+              border: "solid 1px #10202d",
+            }}
+          >
+            Reset
+          </Button>
+        </Box>
       </Box>
-    </Box>
     </div>
-
   )
 }
 

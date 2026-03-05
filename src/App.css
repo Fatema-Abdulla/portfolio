@@ -134,6 +134,11 @@ body{
   text-align: center;
 }
 
+.contact-des{
+  text-align: center;
+  color: rgb(28, 28, 28);
+}
+
 /* Responsive */
 @media (max-width: 768px) {
   .nav-container {
