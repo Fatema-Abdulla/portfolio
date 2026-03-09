@@ -35,7 +35,7 @@ const Skills = () => {
     <div>
       <h2 className="about-skill-title">Skills</h2>
       <Grid container spacing={2}>
-        <Grid item xs={12} md={8}>
+        <Grid size={{xs: 12}}>
           {skillsData.sections.map((sec) => (
             <div key={sec.key}>
               <Typography

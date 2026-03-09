@@ -23,7 +23,7 @@ const Header = () => {
   return (
         <Box sx={{ flexGrow: 1 }}>
           <Grid container spacing={2} className="header-container">
-            <Grid item xs={8} className="header-text">
+            <Grid size={{xs: 7}} className="header-text">
               <h2 className="my-name">Hi, I'm Fatema Abdulla</h2>
               <h3 className="header-sentence">
                 Full Stack & WordPress Developer
@@ -35,7 +35,7 @@ const Header = () => {
               </h3>
               <ColorButton variant="contained">Contact Me</ColorButton>
             </Grid>
-            <Grid item xs={4}>
+            <Grid size={{xs: 4}}>
               <div className="header-image">
                 <img src="/images/banner_img.png" alt="header image" />
               </div>

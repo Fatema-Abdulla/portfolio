@@ -104,7 +104,7 @@ body{
 }
 
 .about-me{
-  padding: 0 95px;
+  padding: 0 93px;
 }
 
 .about-skill-title{
@@ -121,12 +121,12 @@ body{
   font-size: 1.09rem;
 }
 
-.contact-me{
+.contact-me, .work{
   padding: 0 95px;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
 }
 
-.contact-title{
+.contact-title, .work-title{
   color: #c7a667;
   font-size: 35px;
   font-weight: 800;
@@ -137,6 +137,14 @@ body{
 .contact-des{
   text-align: center;
   color: rgb(28, 28, 28);
+}
+
+.work{
+  margin-bottom: -20px;
+}
+
+.work-title{
+  margin-bottom: 20px;
 }
 
 /* Responsive */
