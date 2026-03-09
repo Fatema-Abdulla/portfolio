@@ -28,6 +28,7 @@ const steps = [
   },
 ]
 
+// from AI: Chatgpt
 const CircleIcon = () => {
   return (
     <div
@@ -61,39 +62,10 @@ const WorkExperinces = () => {
             <Step key={step.title}>
               <StepLabel StepIconComponent={CircleIcon}>
                 <div>
-                  <div style={{ fontWeight: "bold", color: "black", fontSize: "15px",}}>
-                    {step.title}
-                  </div>
-                  <div
-                    style={{
-                      fontSize: "14px",
-                      color: "rgba #000000b8 (0, 0, 0, 0.6)",
-                      marginTop: "5px",
-                      fontWeight: "bold",
-                    }}
-                  >
-                    {step.company}
-                  </div>
-                  <div
-                    style={{
-                      fontSize: "14px",
-                      color: "rgba #000000b8 (0, 0, 0, 0.6)",
-                      marginTop: "5px",
-                      fontWeight: "bold",
-                    }}
-                  >
-                    {step.date}
-                  </div>
-                  <div
-                    style={{
-                      fontSize: "14px",
-                      color: "gray",
-                      marginTop: "14px",
-                      lineHeight: 1.6,
-                    }}
-                  >
-                    {step.description}
-                  </div>
+                  <div className="step-titles">{step.title}</div>
+                  <div className="step-companies">{step.company}</div>
+                  <div className="step-dates">{step.date}</div>
+                  <div className="step-descriptions">{step.description}</div>
                 </div>
               </StepLabel>
             </Step>

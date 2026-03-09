@@ -4,8 +4,8 @@
   box-sizing: border-box;
 }
 
-body{
-  background-color: #f7f7f7
+body {
+  background-color: #f7f7f7;
 }
 
 .navbar {
@@ -51,8 +51,8 @@ body{
   transition: all 0.6s ease;
 }
 
-.nav-link:hover{
-  color:#c4a46a;
+.nav-link:hover {
+  color: #c4a46a;
 }
 
 .nav-link.active {
@@ -64,69 +64,71 @@ body{
   font-weight: 700;
 }
 
-.header-container{
+.header-container {
   background-color: #10202d;
 }
 
-.header-text{
+.header-text {
   color: #f7f7f7;
   padding: 0 95px;
 }
 
-.header-image{
+.header-image {
   margin-top: -5px;
   padding: 0 60px;
   margin-bottom: 13px;
 }
 
-.header-image img{
+.header-image img {
   height: 280px;
   filter: drop-shadow(0 20px 30px rgba(202, 202, 202, 0.3));
 }
 
-.my-name{
+.my-name {
   color: #c7a667;
   font-size: 35px;
   font-weight: 800;
   margin-top: 30px;
 }
 
-.header-sentence{
+.header-sentence {
   line-height: 25px;
   font-weight: 500;
   word-spacing: 5px;
   margin-top: 23px;
 }
 
-.about-skill{
+.about-skill {
   background-color: #f7f7f7;
   margin: 20px 0;
 }
 
-.about-me{
+.about-me {
   padding: 0 93px;
 }
 
-.about-skill-title{
+.about-skill-title {
   color: #c7a667;
   font-size: 35px;
   font-weight: 800;
   margin: 15px 0 5px 0;
 }
 
-.about-paragraph{
+.about-paragraph {
   line-height: 28px;
   font-weight: 500;
   text-align: justify;
   font-size: 1.09rem;
 }
 
-.contact-me, .work{
+.contact-me,
+.work {
   padding: 0 95px;
   margin-bottom: 30px;
 }
 
-.contact-title, .work-title{
+.contact-title,
+.work-title {
   color: #c7a667;
   font-size: 35px;
   font-weight: 800;
@@ -134,17 +136,37 @@ body{
   text-align: center;
 }
 
-.contact-des{
+.contact-des {
   text-align: center;
   color: rgb(28, 28, 28);
 }
 
-.work{
+.work {
   margin-bottom: -20px;
 }
 
-.work-title{
+.work-title {
   margin-bottom: 20px;
+}
+
+.step-titles {
+  font-weight: bold;
+  color: black;
+  font-size: 15px;
+}
+
+.step-companies, .step-dates {
+  font-size: 14px;
+  color: rgba #000000b8 (0, 0, 0, 0.6);
+  margin-top: 5px;
+  font-weight: bold;
+}
+
+.step-descriptions{
+  font-size: 14px;
+  color: gray;
+  margin-top: 14px;
+  line-height: 1.6;
 }
 
 /* Responsive */
