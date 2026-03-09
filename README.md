@@ -13,7 +13,7 @@ Personal portfolio website showcasing my projects, skills, and experience.
 ***
 
 ### ***Component Hierarchy Diagram***
-![image](./public/Component%20Hierarchy%20Diagram.jpg)
+![image](./public/Component%20Hierarchy%20Diagram.png)
 ***
 
 ### ***WireFrame***
