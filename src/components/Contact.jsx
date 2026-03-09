@@ -1,5 +1,5 @@
 import { useState } from "react"
-import { TextField, Button, Box, Typography, Alert } from "@mui/material"
+import { TextField, Button, Box, Alert } from "@mui/material"
 
 const Contact = () => {
   const initialFormState = {

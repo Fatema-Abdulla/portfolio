@@ -7,6 +7,7 @@ import Contact from "./Contact"
 
 import Box from "@mui/material/Box"
 import Grid from "@mui/material/Grid"
+import { Element } from 'react-scroll'
 
 const Home = () => {
   return (
@@ -23,7 +24,9 @@ const Home = () => {
         </Grid>
       </Box>
       <WorkExperinces />
-      <Contact />
+      <Element name="contact">
+        <Contact />
+      </Element>
     </div>
   )
 }
