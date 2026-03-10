@@ -4,6 +4,8 @@ import { Routes, Route } from "react-router-dom"
 
 import Nav from "./components/Nav"
 import Home from "./pages/Home"
+import Footer from "./components/Footer"
+
 
 const App = () => {
   return (
@@ -19,6 +21,7 @@ const App = () => {
           ))
         }
       </div> */}
+      < Footer />
     </div>
   )
 }

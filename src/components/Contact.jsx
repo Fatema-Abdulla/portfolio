@@ -27,12 +27,12 @@ const Contact = () => {
     e.preventDefault()
 
     const formURL =
-      "https://docs.google.com/forms/d/e/1FAIpQLSdMzwkY-amHSGkFutMV_36LySWtxvqWJotlSt90XbR5zoTNeA/formResponse"
+      "https://docs.google.com/forms/d/e/1FAIpQLScpyIH48lQCA1G9oD_Wa2OQa7ulOvrLzbogN1USNmjnUQYLCA/formResponse"
 
     const formBody = new FormData()
-    formBody.append("entry.2051031244", formData.name)
-    formBody.append("entry.275432559", formData.email)
-    formBody.append("entry.2007378710", formData.description)
+    formBody.append("entry.1370365448", formData.name)
+    formBody.append("entry.680401577", formData.email)
+    formBody.append("entry.1302566134", formData.description)
 
     try {
       await fetch(formURL, {
@@ -61,8 +61,8 @@ const Contact = () => {
       </p>
       <Box sx={{ maxWidth: 600, mx: "auto" }}>
         {success && (
-          <Alert severity="success" sx={{ mb: 2 }}>
-            description sent successfully!
+          <Alert severity="success" sx={{ mt: 2, mb: 1 }}>
+            Email Sent Successfully!
           </Alert>
         )}
 

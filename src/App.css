@@ -169,6 +169,16 @@ body {
   line-height: 1.6;
 }
 
+.footer-text{
+  padding: 10px 0 10px 50px;
+}
+
+.my-copyright{
+  font-size: 12px;
+  color: #f7f7f7;
+  font-weight:lighter;
+}
+
 /* Responsive */
 @media (max-width: 768px) {
   .nav-container {
