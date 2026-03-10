@@ -64,7 +64,7 @@ body {
   font-weight: 700;
 }
 
-.header-container {
+.header-container, .footer-container {
   background-color: #10202d;
 }
 
@@ -170,13 +170,33 @@ body {
 }
 
 .footer-text{
-  padding: 10px 0 10px 50px;
+  padding: 18px 0 10px 70px;
 }
 
 .my-copyright{
-  font-size: 12px;
+  font-size: 15px;
   color: #f7f7f7;
   font-weight:lighter;
+}
+
+.footer-text-right{
+  padding: 18px 0 10px 15px;
+  text-align: right;
+}
+
+.github{
+  margin-right: 20px;
+}
+
+.my-accounts{
+  font-size: 24px;
+  color: #f7f7f7;
+  transition: color 0.3s ease, transform 0.3s ease
+}
+
+.my-accounts:hover{
+  color: #d6b77a;
+  transform: translateY(-2px);
 }
 
 /* Responsive */
