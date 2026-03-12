@@ -4,6 +4,9 @@ import Stepper from "@mui/material/Stepper"
 import Step from "@mui/material/Step"
 import StepLabel from "@mui/material/StepLabel"
 
+import useMediaQuery from "@mui/material/useMediaQuery"
+import { useTheme } from "@mui/material/styles"
+
 const steps = [
   {
     title: "E-commerce Website Designer",
@@ -44,6 +47,9 @@ const CircleIcon = () => {
 }
 
 const WorkExperinces = () => {
+  const theme = useTheme()
+  const isMobile = useMediaQuery(theme.breakpoints.down("sm"))
+
   return (
     <div className="work">
       <h2 className="work-title">Work Experiences</h2>
@@ -51,12 +57,8 @@ const WorkExperinces = () => {
       <Box sx={{ width: "100%" }}>
         <Stepper
           activeStep={-1}
-          alternativeLabel
-          sx={{
-            "& .MuiStep-root": {
-              px: 2,
-            },
-          }}
+          alternativeLabel={!isMobile}
+          orientation={isMobile ? "vertical" : "horizontal"}
         >
           {steps.map((step) => (
             <Step key={step.title}>

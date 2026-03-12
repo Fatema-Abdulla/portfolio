@@ -15,10 +15,10 @@ const Home = () => {
       <Header />
       <Box sx={{ flexGrow: 1 }} className="about-skill">
         <Grid container spacing={1}>
-          <Grid size={{ xs: 7 }}>
+          <Grid size={{ xs: 12, md: 7 }}>
             <AboutMe />
           </Grid>
-          <Grid size={{ xs: 4 }}>
+          <Grid size={{ xs: 12, md: 5 }}>
             <Skills />
           </Grid>
         </Grid>
