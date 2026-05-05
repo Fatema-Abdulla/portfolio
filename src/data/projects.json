@@ -1,8 +1,48 @@
 [
   {
-    "id": 1
+    "id": 1,
+    "name": "Guessor",
+    "shortDescription": "A fun word guessing game with multiple categories and timed rounds.",
+    "tags": ["HTML", "CSS", "JavaScript"],
+    "description": "A word guessing game featuring categories like fruits, animals, and countries. Players must guess the correct letters within one minute per round. Correct guesses increase the score, while failure results in losing the round.",
+    "tools": ["Figma", "Visual Studio Code", "GitHub"],
+    "githubLink": "https://github.com/Fatema-Abdulla/hangman-game.git"
   },
   {
-    "id": 2
+    "id": 2,
+    "name": "SkillSync",
+    "shortDescription": "An online learning platform with course management and progress tracking.",
+    "tags": ["React.js", "Node.js", "Express.js", "MongoDB"],
+    "description": "An online learning platform where instructors can create and manage courses, and students can enroll, learn, and track their progress. Includes dashboards, lesson pages, and real-time progress tracking.",
+    "tools": ["Figma", "Visual Studio Code", "MongoDB Compass", "GitHub"],
+    "githubLink": "https://github.com/izZERO/SkillSync-Frontend.git",
+    "githubLink_Backend": "https://github.com/izZERO/SkillSync-Backend.git"
+  },
+  {
+    "id": 3,
+    "name": "Evenvite",
+    "shortDescription": "A platform for creating and managing public and private events.",
+    "tags": ["Node.js", "Express.js", "MongoDB"],
+    "description": "An event creation platform allowing users to create private or public events. Guests can receive invitation cards and respond to event organizers.",
+    "tools": ["Figma", "Visual Studio Code", "MongoDB Compass", "GitHub"],
+    "githubLink": "https://github.com/Fatema-227/Project2-Event-Organizer.git"
+  },
+  {
+    "id": 4,
+    "name": "Roompickr",
+    "shortDescription": "A flexible platform for booking rooms and shared spaces.",
+    "tags": ["Python", "Django", "PostgreSQL"],
+    "description": "A platform for booking spaces such as meeting rooms, workspaces, study halls, and event venues. Designed to provide a safe, flexible, and inclusive booking experience.",
+    "tools": ["Figma", "Visual Studio Code", "pgAdmin 4", "GitHub"],
+    "githubLink": "https://github.com/Fatema-Abdulla/RoomPickr.git"
+  },
+  {
+    "id": 5,
+    "name": "Equalsy",
+    "shortDescription": "A simple calculator with session-based history tracking.",
+    "tags": ["HTML", "CSS", "JavaScript"],
+    "description": "A platform for booking spaces such as meeting rooms, workspaces, study halls, and event venues. Designed to provide a safe, flexible, and inclusive booking experience.",
+    "tools": ["Figma", "Visual Studio Code", "GitHub"],
+    "githubLink": "https://github.com/Fatema-Abdulla/calculator.git"
   }
 ]

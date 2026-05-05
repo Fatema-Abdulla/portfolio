@@ -11,7 +11,7 @@ const AboutMe = () => {
         experiences.
         <br />
         <br />
-        After completing an intensive full-stack development bootcamp, I gained
+        After completing an intensive full-stack development bootcamp at General Assembly, I gained
         hands-on experience developing dynamic web applications and working
         across both frontend and backend technologies. I also completed a
         university internship in WordPress e-commerce development, strengthening

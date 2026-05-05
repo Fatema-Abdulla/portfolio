@@ -25,9 +25,8 @@ const Header = () => {
       <Grid container spacing={2} className="header-container">
         <Grid size={{ xs: 12, md: 7 }} className="header-text">
           <h2 className="my-name">Hi, I'm Fatema Abdulla</h2>
+          <h2 className="header-subtitle">Full Stack & WordPress Developer</h2>
           <h3 className="header-sentence">
-            Full Stack & WordPress Developer
-            <br />
             Crafting modern, responsive web applications with clean architecture
             <br />
             and UX-driven design.
