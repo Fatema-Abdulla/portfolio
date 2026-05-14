@@ -52,6 +52,36 @@
       {
         "name": "Django",
         "icon": "Django.webp"
+      },
+      {
+        "name": "Bootstrap",
+        "icon": "Bootstrap_logo.png"
+      },
+      {
+        "name": "Material UI",
+        "icon": "material-ui.png"
+      }
+    ],
+    "tools": [
+      {
+        "name": "Git",
+        "icon": "Git_icon.png"
+      },
+      {
+        "name": "GitHub",
+        "icon": "GitHub-Logo.png"
+      },
+      {
+        "name": "Postman",
+        "icon": "postman_logo.webp"
+      },
+      {
+        "name": "Insomnia",
+        "icon": "insomnia-logo.png"
+      },
+            {
+        "name": "Figma",
+        "icon": "figma_logo.png"
       }
     ]
   },
@@ -67,6 +97,10 @@
     {
       "key": "frameworksLibraries",
       "title": "Frameworks and Libraries"
+    },
+    {
+      "key": "tools",
+      "title": "Tools"
     }
   ]
 }

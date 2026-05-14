@@ -33,7 +33,7 @@ const CustomizeBox = styled(Box)(() => ({
 const Skills = () => {
   return (
     <div>
-      <h2 className="about-skill-title">Skills</h2>
+      <h2 className="about-skill-title">Tech Stack</h2>
       <Grid container spacing={2}>
         <Grid size={{xs: 12}}>
           {skillsData.sections.map((sec) => (
