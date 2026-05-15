@@ -6,6 +6,7 @@ import Grid from "@mui/material/Grid"
 import { styled } from "@mui/material/styles"
 import { Link } from "react-scroll"
 
+import Silk from "./Silk"
 
 const ColorButton = styled(Button)(() => ({
   backgroundColor: "#d6b77a",
@@ -23,6 +24,15 @@ const ColorButton = styled(Button)(() => ({
 const HeaderHome = () => {
   return (
     <Box sx={{ flexGrow: 1 }}>
+      <div className="silk-bg">
+        <Silk
+          speed={5}
+          scale={1}
+          color="#10202d"
+          noiseIntensity={0.1}
+          rotation={0}
+        />
+      </div>
       <Grid container spacing={2} className="header-container">
         <Grid size={{ xs: 12, md: 7 }} className="header-text">
           <h2 className="my-name">Hi, I'm Fatema Abdulla</h2>

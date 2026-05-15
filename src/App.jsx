@@ -6,13 +6,10 @@ import Nav from "./components/Nav"
 import Home from "./pages/Home"
 import Projects from "./pages/Projects"
 import Footer from "./components/Footer"
-import Background from "./components/Background"
-
 
 const App = () => {
   return (
     <div>
-    <Background />
       <Nav />
       <Routes>
         <Route path="/" element={<Home />} />
@@ -25,7 +22,7 @@ const App = () => {
           ))
         }
       </div> */}
-      < Footer />
+      <Footer />
     </div>
   )
 }
