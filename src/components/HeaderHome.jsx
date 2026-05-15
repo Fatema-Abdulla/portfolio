@@ -6,6 +6,7 @@ import Grid from "@mui/material/Grid"
 import { styled } from "@mui/material/styles"
 import { Link } from "react-scroll"
 
+
 const ColorButton = styled(Button)(() => ({
   backgroundColor: "#d6b77a",
   color: "#000",
@@ -19,7 +20,7 @@ const ColorButton = styled(Button)(() => ({
   },
 }))
 
-const Header = () => {
+const HeaderHome = () => {
   return (
     <Box sx={{ flexGrow: 1 }}>
       <Grid container spacing={2} className="header-container">
@@ -47,4 +48,4 @@ const Header = () => {
   )
 }
 
-export default Header
+export default HeaderHome

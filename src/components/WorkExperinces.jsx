@@ -9,11 +9,11 @@ import { useTheme } from "@mui/material/styles"
 
 const steps = [
   {
-    title: "E-commerce Website Designer",
-    company: "Space Tap",
-    date: "Jul 2024 - Aug 2024",
+    title: "IT Specialist",
+    company: "Microlink Solutions W.L.L",
+    date: "Jan 2026 - Present",
     description:
-      "Completed a university internship using WordPress. Designed website pages and added products while improving skills in content management and responsive design.",
+      "Monitor and resolve application issues, track system and database performance, manage user accounts, and collaborate with the team to ensure smooth operations.",
   },
   {
     title: "Software Engineering Bootcamp",
@@ -23,11 +23,11 @@ const steps = [
       "Completed a 12-week full-time Full-Stack Web Development program, building real-world applications using Python, JavaScript, SQL, Node.js, Express.js, and React.",
   },
   {
-    title: "OSS/BSS Support Specialist",
-    company: "Microlink Solutions W.L.L",
-    date: "Jan 2026 - Present",
+    title: "E-commerce Website Designer Internship",
+    company: "Space Tap",
+    date: "Jul 2024 - Aug 2024",
     description:
-      "Monitor and resolve application issues, track system and database performance, manage user accounts, and collaborate with the team to ensure smooth operations.",
+      "Completed a university internship using WordPress. Designed website pages and added products while improving skills in content management and responsive design.",
   },
 ]
 
@@ -40,25 +40,44 @@ const CircleIcon = () => {
         height: 14,
         borderRadius: "50%",
         backgroundColor: "#10202d",
-        marginTop: 4,
+        position: "relative",
+        bottom: 55,
       }}
     />
   )
 }
 
 const WorkExperinces = () => {
-  const theme = useTheme()
-  const isMobile = useMediaQuery(theme.breakpoints.down("sm"))
-
   return (
     <div className="work">
       <h2 className="work-title">Work Experiences</h2>
 
-      <Box sx={{ width: "100%" }}>
+      <Box
+        sx={{
+          width: "100%",
+          display: "flex",
+          justifyContent: "center",
+          paddingLeft: '75px',
+        }}
+      >
         <Stepper
           activeStep={-1}
-          alternativeLabel={!isMobile}
-          orientation={isMobile ? "vertical" : "horizontal"}
+          orientation="vertical"
+          sx={{
+            width: 660,
+
+            "& .MuiStep-root": {
+              minHeight: 170,
+            },
+
+            "& .MuiStepConnector-line": {
+              borderColor: "#dbe3f0",
+              borderLeftWidth: 2,
+              minHeight: 140,
+              marginLeft: "-5.7px",
+              marginTop: "-140px",
+            },
+          }}
         >
           {steps.map((step) => (
             <Step key={step.title}>

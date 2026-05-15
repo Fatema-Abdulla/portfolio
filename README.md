@@ -1,5 +1,4 @@
 # Portfolio
-## Date: 20/2/2026
 ### By: Fatima Hussain
 ***
 ### Description
@@ -27,6 +26,7 @@ Personal portfolio website showcasing my projects, skills, and experience.
 
 ### ***Credits***
 #### [Material UI](https://mui.com/material-ui/getting-started/)
+#### [Floating Balls](https://prismic.io/blog/css-background-effects)
 #### [Embedding Google Forms](https://plainenglish.io/blog/embedding-google-forms-in-react-apps)
 #### [React Scroll](https://www.npmjs.com/package/react-scroll)
 #### [React Icons](https://react-icons.github.io/react-icons/)

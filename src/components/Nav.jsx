@@ -7,7 +7,7 @@ import { NavLink } from "react-router-dom"
 const Nav = () => {
   return (
     <Box sx={{ flexGrow: 1 }}>
-      <Grid container spacing={2} className="footer-container">
+      <Grid container spacing={2} className="nav-container">
         <Grid size={{ xs: 7, md: 7 }} className="nav-left">
           <img src="/newlogo.png" alt="logo" className="nav-logo" />
           <h4 className="nav-name">Fatema Abdulla</h4>
