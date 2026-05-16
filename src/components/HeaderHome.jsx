@@ -26,7 +26,7 @@ const HeaderHome = () => {
     <Box sx={{ flexGrow: 1 }}>
       <div className="silk-bg">
         <Silk
-          speed={5}
+          speed={7}
           scale={1}
           color="#10202d"
           noiseIntensity={0.1}

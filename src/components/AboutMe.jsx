@@ -19,9 +19,9 @@ const AboutMe = () => {
         client-focused solutions.
         <br />
         <br />
-        Currently working as an IT Specialist - L1 Support, supporting system operations,
-        troubleshooting application issue, and collaborating with operation
-        teams.
+        Currently working as an IT Specialist - L1 Support, monitor and resolve
+        application issues, and collaborate with the team to ensure smooth
+        operations.
         <br />
         <br />I am excited to contribute to significant digital initiatives and
         advance within a professional development team.

@@ -1,4 +1,4 @@
-# Portfolio
+# Fatema Abdulla Portfolio
 ### Description
 Personal portfolio website showcasing my projects, skills, and experience.
 ***

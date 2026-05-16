@@ -1,33 +1,49 @@
 import "../App.css"
+import * as React from "react"
 import Box from "@mui/material/Box"
-import Stepper from "@mui/material/Stepper"
-import Step from "@mui/material/Step"
-import StepLabel from "@mui/material/StepLabel"
-
-import useMediaQuery from "@mui/material/useMediaQuery"
-import { useTheme } from "@mui/material/styles"
+import Grid from "@mui/material/Grid"
+import Card from "@mui/material/Card"
+import CardContent from "@mui/material/CardContent"
 
 const steps = [
   {
+    id: 1,
     title: "IT Specialist",
     company: "Microlink Solutions W.L.L",
     date: "Jan 2026 - Present",
-    description:
-      "Monitor and resolve application issues, track system and database performance, manage user accounts, and collaborate with the team to ensure smooth operations.",
+    description: [
+      "Completed a university internship using WordPress.",
+      "Designed multiple website pages for a client.",
+      "Added and managed products on a client website.",
+      "Built a CRUD web application using PHP and managed databases on a web hosting server.",
+      "Learned the basics of Flutter and developed a mobile application.",
+    ],
   },
   {
+    id: 2,
     title: "Software Engineering Bootcamp",
     company: "General Assembly",
     date: "Aug 2025 - Nov 2025",
-    description:
-      "Completed a 12-week full-time Full-Stack Web Development program, building real-world applications using Python, JavaScript, SQL, Node.js, Express.js, and React.",
+    description: [
+      "Completed a university internship using WordPress.",
+      "Designed multiple website pages for a client.",
+      "Added and managed products on a client website.",
+      "Built a CRUD web application using PHP and managed databases on a web hosting server.",
+      "Learned the basics of Flutter and developed a mobile application.",
+    ],
   },
   {
-    title: "E-commerce Website Designer Internship",
+    id: 3,
+    title: "Designer and Developer Internship",
     company: "Space Tap",
     date: "Jul 2024 - Aug 2024",
-    description:
-      "Completed a university internship using WordPress. Designed website pages and added products while improving skills in content management and responsive design.",
+    description: [
+      "Completed a university internship using WordPress.",
+      "Designed multiple website pages for a client.",
+      "Added and managed products on a client website.",
+      "Built a CRUD web application using PHP and managed databases on a web hosting server.",
+      "Learned the basics of Flutter and developed a mobile application.",
+    ],
   },
 ]
 
@@ -36,14 +52,25 @@ const CircleIcon = () => {
   return (
     <div
       style={{
-        width: 14,
-        height: 14,
-        borderRadius: "50%",
-        backgroundColor: "#10202d",
-        position: "relative",
-        bottom: 55,
+        position: "absolute",
+        left: 0,
+        top: 38,
+        display: "flex",
+        flexDirection: "column",
+        alignItems: "center",
       }}
-    />
+    >
+      <div
+        style={{
+          width: 14,
+          height: 14,
+          borderRadius: "50%",
+          backgroundColor: "#10202d",
+          position: "relative",
+        }}
+      />
+      <div className="line"></div>
+    </div>
   )
 }
 
@@ -57,41 +84,41 @@ const WorkExperinces = () => {
           width: "100%",
           display: "flex",
           justifyContent: "center",
-          paddingLeft: '75px',
         }}
       >
-        <Stepper
-          activeStep={-1}
-          orientation="vertical"
-          sx={{
-            width: 660,
-
-            "& .MuiStep-root": {
-              minHeight: 170,
-            },
-
-            "& .MuiStepConnector-line": {
-              borderColor: "#dbe3f0",
-              borderLeftWidth: 2,
-              minHeight: 140,
-              marginLeft: "-5.7px",
-              marginTop: "-140px",
-            },
-          }}
-        >
+        <Grid container direction="column" spacing={2}>
           {steps.map((step) => (
-            <Step key={step.title}>
-              <StepLabel StepIconComponent={CircleIcon}>
-                <div>
-                  <div className="step-titles">{step.title}</div>
-                  <div className="step-companies">{step.company}</div>
-                  <div className="step-dates">{step.date}</div>
-                  <div className="step-descriptions">{step.description}</div>
-                </div>
-              </StepLabel>
-            </Step>
+            <React.Fragment key={step.id}>
+              <Grid size={{ xs: 12, md: 1 }} sx={{ position: "relative" }}>
+                <CircleIcon />
+              </Grid>
+
+              <Grid size={{ xs: 12, md: 11 }}>
+                <Card
+                  sx={{
+                    backgroundColor: "transparent",
+                    width: "100%",
+                    maxWidth: 660,
+                    boxShadow: "none",
+                    marginLeft: 2,
+                  }}
+                >
+                  <CardContent>
+                    <div className="step-titles">{step.title}</div>
+                    <div className="step-companies">{step.company}</div>
+                    <div className="step-dates">{step.date}</div>
+
+                    <ul className="step-descriptions">
+                      {step.description.map((item, index) => (
+                        <li key={index}>{item}</li>
+                      ))}
+                    </ul>
+                  </CardContent>
+                </Card>
+              </Grid>
+            </React.Fragment>
           ))}
-        </Stepper>
+        </Grid>
       </Box>
     </div>
   )
