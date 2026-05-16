@@ -9,14 +9,14 @@ const steps = [
   {
     id: 1,
     title: "IT Specialist",
-    company: "Microlink Solutions W.L.L",
+    company: "Microlink Solutions",
     date: "Jan 2026 - Present",
     description: [
-      "Completed a university internship using WordPress.",
-      "Designed multiple website pages for a client.",
-      "Added and managed products on a client website.",
-      "Built a CRUD web application using PHP and managed databases on a web hosting server.",
-      "Learned the basics of Flutter and developed a mobile application.",
+      "Manage and resolve app incidents, providing clear and effective communication as first-line support for customer technical issues.",
+      "Analyze application logs to quickly identify and resolve user-facing issues.",
+      "Troubleshoot and identify application errors to maintain optimal platform stability.",
+      "Utilize SQL queries to manage and interact with the database, performing data updates and administrative tasks to support application operations.",
+      "Monitor application performance metrics to ensure efficient and uninterrupted user operations.",
     ],
   },
   {
@@ -25,11 +25,11 @@ const steps = [
     company: "General Assembly",
     date: "Aug 2025 - Nov 2025",
     description: [
-      "Completed a university internship using WordPress.",
-      "Designed multiple website pages for a client.",
-      "Added and managed products on a client website.",
-      "Built a CRUD web application using PHP and managed databases on a web hosting server.",
-      "Learned the basics of Flutter and developed a mobile application.",
+      "Utilized Git and GitHub for managing code repositories and streamlining team collaboration.",
+      "Developed full-stack web applications by deploying JavaScript, MERN/MEN stacks, and Python with Django framework.",
+      "Tested and validated backend functionality using Postman and Insomnia to ensure seamless data integration.",
+      "Designed and managed relational and non-relational databases using MongoDB and PostgreSQL for efficient data storage.",
+      "Engaged in collaborative team projects with fellow students to build integrated software solutions.",
     ],
   },
   {
@@ -38,11 +38,11 @@ const steps = [
     company: "Space Tap",
     date: "Jul 2024 - Aug 2024",
     description: [
-      "Completed a university internship using WordPress.",
-      "Designed multiple website pages for a client.",
-      "Added and managed products on a client website.",
-      "Built a CRUD web application using PHP and managed databases on a web hosting server.",
-      "Learned the basics of Flutter and developed a mobile application.",
+      "Successfully completed a university internship, specializing in web development and content management via WordPress.",
+      "Designed and customized multiple responsive website pages for clients to enhance user experience (UX).",
+      "Added and managed product on a client’s website, ensuring accurate information.",
+      "Developed a full CRUD website using PHP, including database management and successful deployment on a web hosting server.",
+      "Gained a foundational understanding of Flutter and built a basic mobile application as a practical project.",
     ],
   },
 ]
@@ -98,7 +98,7 @@ const WorkExperinces = () => {
                   sx={{
                     backgroundColor: "transparent",
                     width: "100%",
-                    maxWidth: 660,
+                    maxWidth: 600,
                     boxShadow: "none",
                     marginLeft: 2,
                   }}
